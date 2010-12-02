@@ -1,0 +1,58 @@
+---------------------------
+Journler to Evernote Export
+---------------------------
+
+Copyright 2010 Michael Caruso
+Licensed under the GPL, version 3 (see http://www.gnu.org/licenses/gpl.txt)
+Provided with no warranty of any kind -- use at your own risk
+
+I wrote an Applescript that takes all of the Journler entries that you highlight and exports them to Evernote. You can find the script below.
+
+The script takes any selected Journler entry and creates an equivalent Evernote entry. Creation date is preserved so that your new notes in Evernote appear with the same creation date as those in Journler. Tags, folders, and categories in Journler are preserved as tags in Evernote. Attachments and links in the Journler entries are sent to the new Evernote entries.
+
+----------------------------
+Requirements and Limitations
+----------------------------
+The script requires a few things before it can work:
+* an Evernote Premium subscription - this is because the free subscription limits the types of files that a user can upload. The Premium subscription allows users to upload any type of file that they may have in a Journler entry
+* Journler 2.5.5 (or greater) installed - the latest Journler version, the script uses Applescript commands from the installed app
+* Evernote for Mac 1.11 (or greater) installed - like Journler above, the script uses commands available through the Evernote app
+
+My Journler setup is fairly simple, so the script is purposefully simple in it's implementation. It does not handle wikilinks between entries in Journler. Try testing the app with just one entry before you go committing it to all of your entries.
+
+This script is provided without any warranty, use at your own risk. If you would like to improve the script, please feel free to fork it on GitHub.
+
+----------------------------------------------------------------------------
+*** Backing Up Your Journler and Evernote Data Before Running the Script ***
+----------------------------------------------------------------------------
+Backing up both your Journler and Evernote libraries is fairly simple if you have both apps installed on your mac. The following are quick step-by-step instructions on how to backup your Journler and Evernote libraries (and the entries contained within those libraries):
+
+1) Open a Finder window and navigate to /Macintosh HD/Users/[username]/Library/Application Support
+2) In that folder, find the folders titled "Evernote" and "Journler"
+3) Copy those folders to your desktop (or any other location where you want to keep your backup)
+4) You're done! The folders you just copied are all of your entries and data for the two applications. Having the copied versions allows you to roll back your application's data should a problem arise.
+Evernote also provides a way to export all of your notes: Under File, select "Export..." and save the file.
+
+---------------------
+How To Use The Script
+---------------------
+* Download the script from the link above
+* Unzip the zip file, simply unzip it to your desktop or a folder of your choosing. The location of the script doesn't really matter.
+* Open Journler and select the entries that you would like to export to Evernote (for multiple consecutive entries, hold Shift while selecting those entries, for multiple non-consecutive entries, hold Command while selecting those entires).
+* After reviewing the license, double-click on the script titled Journler_to_Evernote.
+* Both the Journler and Evernote apps will open if they are not already open. The script will run and you're all done.
+* If you're unhappy with how the transfer went, all of the Journler entries are in their own separate notebook in Evernote. Simply delete that notebook and the entries go with it.
+
+--------
+Download
+--------
+After reading the above, download the script here:
+http://github.com/michaelcaruso/journler-to-evernote
+
+-------
+Contact
+-------
+Michael Caruso
+http://michaelcaruso.net/
+Another project I'm working on: Evergreen Sessions - find and recommend sustainable outdoor gear
+mike@michaelcaruso.net
